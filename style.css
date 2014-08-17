@@ -1,0 +1,38 @@
+/* CSS needs to be re-written and cleaned up*/
+
+h1 {
+    color: #3579DC;
+}
+
+body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -250px;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+li:before {
+    content: "> ";
+    color: #3579DC;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3579DC;
+    margin: 1em 0;
+    padding: 0;
+}
