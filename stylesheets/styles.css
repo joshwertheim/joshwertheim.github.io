@@ -9,11 +9,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+  margin:0 0 10px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin:0 0 10px;
 }
 
 h1, h2, h3 {
@@ -33,17 +33,18 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  font-size:18px;
+  color:#CD3333;
   font-weight:400;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:#8B2323;
 }
 
 a small {
-  font-size:12px;
+  font-size:13px;
   color:#777;
   margin-top:-0.6em;
   display:block;
@@ -151,7 +152,7 @@ header ul a {
   display:block;
   text-align:center;
   padding-top:6px;
-  height:34px;
+  height:40px;
 }
 
 header ul a:hover {
@@ -198,7 +199,7 @@ section {
 }
 
 small {
-  font-size:11px;
+  font-size:13px;
 }
 
 hr {
