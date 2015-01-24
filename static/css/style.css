@@ -28,7 +28,7 @@
 #link-list > li > a{
     color: #666666;
     text-decoration: none;
-    padding: 3px 8px;
+    padding: 3px 12px;
 }
 
 #link-list > li > a:hover{
