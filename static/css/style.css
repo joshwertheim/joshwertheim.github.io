@@ -8,6 +8,10 @@
     margin-right: auto;
 }
 
+#playlist {
+  float: right;
+}
+
 #identicon {
     display: block;
     vertical-align: middle;
