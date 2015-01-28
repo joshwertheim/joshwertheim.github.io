@@ -9,7 +9,7 @@
 }
 
 #playlist {
-  float: right;
+    float: right;
 }
 
 #identicon {
@@ -29,16 +29,26 @@
     *display:inline;
 }
 
-#link-list > li > a{
+#link-list > li > a {
     color: #666666;
     font-weight: 700;
     text-decoration: none;
     padding: 3px;
     margin-left: 30%;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    /* 
+        idea and code from
+        http://stackoverflow.com/a/6008409/3026563
+    */
 }
 
 #link-list > li > a:hover{
-    color: black;
+    color: #ff9600;
     text-decoration: underline;
 }
 
@@ -79,19 +89,19 @@ hr {
 }
 
 small {
-  font-size:13px;
-  padding-top:-0.6em;
+    font-size:13px;
+    padding-top:-0.6em;
 }
 
 body {
-  padding:50px;
-  font:16px/1.5 Lato, "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight:300;
-  background-color: #F0F0F0;
+    padding:50px;
+    font:16px/1.5 Lato, "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight:300;
+    background-color: #F0F0F0;
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
-  color:#333;
-  font-size:12px;
+    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
+    color:#333;
+    font-size:12px;
 }
