@@ -27,7 +27,6 @@
 
 #link-list > li {
     display: inline-block;
-    zoom:1;
     *display:inline;
 }
 
@@ -36,7 +35,7 @@
     font-weight: 700;
     text-decoration: none;
     padding: 3px;
-    margin-left: 30%;
+    margin-left: 1.5em;
 
     -o-transition:.5s;
     -ms-transition:.5s;
