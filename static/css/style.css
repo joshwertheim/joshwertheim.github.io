@@ -21,6 +21,8 @@
 #link-list{
     background: #F0F0F0;   
     padding: 8px;
+    border-top: 1px solid #ff9600;
+    border-bottom: 1px solid #ff9600;
 }
 
 #link-list > li {
