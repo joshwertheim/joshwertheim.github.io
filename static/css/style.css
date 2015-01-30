@@ -103,6 +103,22 @@ hr {
     margin-top: 1.4em;
 }
 
+#contact-icons {
+    padding-top: 0.5em;
+}
+
+#email-icon {
+    background: #DD4B39;
+}
+
+#github-icon {
+    background: #4183C4;
+}
+
+#linkedin-icon {
+    background: #007FB1;
+}
+
 small {
     font-size:13px;
     padding-top:-0.6em;
