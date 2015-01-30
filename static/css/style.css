@@ -21,8 +21,8 @@
 #link-list{
     background: #F0F0F0;   
     padding: 8px;
-    border-top: 1px solid #ff9600;
-    border-bottom: 1px solid #ff9600;
+    border-top: 2px solid #ff9600;
+    border-bottom: 2px solid #ff9600;
 }
 
 #link-list > li {
@@ -87,6 +87,20 @@ hr {
     /* Set the hr color */
     color: #ff9600; /* old IE */
     background-color: #ff9600; /* Modern Browsers */
+}
+
+#projects-header {
+    padding-bottom: 60px;
+}
+
+#projects-header > h2 {
+    float: left;
+    margin-right: 1em;
+}
+
+#projects-header > iframe {
+    float: left;
+    margin-top: 1.4em;
 }
 
 small {
