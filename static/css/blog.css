@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+body {
+    width: 700px;
+    background-color: #F0F0F0;
+    padding:0px;
+    margin: 1em auto;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #1155dd;
+    font-weight: 500;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.post {
+    margin-bottom: 40px;
+    border-top: 1px solid #1155dd;
+    border-bottom: 1px solid #1155dd;
+}
+
+.title {
+    color: #1155dd;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.date {
+    font-size: small;
+    font-style: italic;
+    margin-top: 1px;
+}
+
+code, pre {
+    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
+    color:#333;
+    font-size:12px;
+}

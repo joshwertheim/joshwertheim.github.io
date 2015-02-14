@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="static/css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="static/css/blog.css"/>
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <title>Posts</title>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-48010725-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </head>
+
+    <body>
+        <a href="index.html">Home</a>
+        <h1>Posts</h1>
+        <div class="post">
+            <p class="title">Usefulness of Caching and Databases</p>
+            <p class="date">Posted February 13, 2015</p>
+            <p>While working on my website, <a href="https://sfg-info.appspot.com/roster" target="_blank">SFGinfo</a>, I've come across different interesting dilemmas for the first time. One in particular was the cause of inefficient operation for the Roster page. A goal I had from the onset was to have thumbnail images of each player in the list. While this goal was simple enough to implement, its first iteration wasn't very pretty. While thumbnails exist for all currently activated players, most who are still in the minor leagues do not have image files available. This presented a problem. As shown below, I needed to dynamically figure out which players had a photo and which did not, all while keeping the process relatively efficient.</p>
+            <img src="http://i.imgur.com/Ggej3Yk.png" />
+            <p>I had the idea of making an HTTP request to each player thumb's purported location. While this worked and allowed me to know which minor league players needed my custom placeholder image, this caused a massive slowdown on page load for each user every time the page was rendered. A friend gave me a suggestion that I hadn't considered: using a database to cache the available URLs, as well as which players had them available and which did not.</p>
+            <p>Since I had never used a database in a real application before, I spent some time researching the NoSQL datastore provided by Google Cloud<sup><a href="#fn1" id="ref1">1</a></sup>. By using this database, I was able to set up a cache of sorts. Now instead of a 5-8 second process caused by doing a batch of HTTP requests every time the page is rendered, it only needed to happen once. Now the Roster page loads almost immediately for all users.</p>
+            <sup id="fn1">1. <a href="https://cloud.google.com/datastore/docs" target="_blank">Google Cloud Datastore</a></sup>
+        </div>
+    </body>
+</html>

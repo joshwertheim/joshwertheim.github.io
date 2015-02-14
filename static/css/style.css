@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 #intro-body {
-    width: 400px;
+    width: 500px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -79,6 +79,7 @@ hr {
     /* Set the hr color */
     color: #333; /* old IE */
     background-color: #333; /* Modern Browsers */
+    margin: 1em;
 }
 
 #contact-list-hr {
